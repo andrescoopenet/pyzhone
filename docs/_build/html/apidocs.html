@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pyzhone API documentation &mdash; pyzhone 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to pyzhone’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> pyzhone
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pyzhone API documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#commands-for-mxk-configuration-library">Commands for MXK Configuration Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mxk-telnet-core-library">MXK Telnet Core Library</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyzhone</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Pyzhone API documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/apidocs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-mxkcommands">
+<span id="pyzhone-api-documentation"></span><h1>Pyzhone API documentation<a class="headerlink" href="#module-mxkcommands" title="Permalink to this headline"></a></h1>
+<section id="commands-for-mxk-configuration-library">
+<h2>Commands for MXK Configuration Library<a class="headerlink" href="#commands-for-mxk-configuration-library" title="Permalink to this headline"></a></h2>
+<p>This library allows users to send premade commands to configure ONTs on DZN-Zhone’s MXK Chassis</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mxkcommands.Commands">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mxkcommands.</span></span><span class="sig-name descname"><span class="pre">Commands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'admin'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">passw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'linktoweb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'192.168.0.41'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">23</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands" title="Permalink to this definition"></a></dt>
+<dd><p>This class inherits functions from mxktelnet</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.bridgeaddmgmt">
+<span class="sig-name descname"><span class="pre">bridgeaddmgmt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mxk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vlan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gtp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.bridgeaddmgmt" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Set management interface (bridge add 1-2-3-10/gpononu gtp 50 downlink-data vlan 800 tagged rg-bridged mgmt)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+<li><p><strong>vlan</strong> (<em>Str</em>) – id of vlan for pppoe service</p></li>
+<li><p><strong>gtp</strong> (<em>Str</em>) – gpon traffic profile</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.bridgeaddpppoe">
+<span class="sig-name descname"><span class="pre">bridgeaddpppoe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mxk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vlan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gtp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interfaces</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.bridgeaddpppoe" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Set PPPoE bridge (bridge add 1-2-3-10/gpononu gtp 100 downlink-pppoe vlan 1000 tagged eth [1-4] rg-bpppoe)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+<li><p><strong>vlan</strong> (<em>Str</em>) – id of vlan for pppoe service</p></li>
+<li><p><strong>gtp</strong> (<em>Str</em>) – gpon traffic profile</p></li>
+<li><p><strong>interfaces</strong> (<em>Str</em>) – tagged interfaces</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.bridgeaddtls">
+<span class="sig-name descname"><span class="pre">bridgeaddtls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mxk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vlan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gtp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interfaces</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.bridgeaddtls" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Set tls bridge (bridge add 1-2-3-10/gpononu gtp 100 tls vlan 1000 tagged eth [1-4])</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+<li><p><strong>vlan</strong> (<em>Str</em>) – id of vlan for pppoe service</p></li>
+<li><p><strong>gtp</strong> (<em>Str</em>) – gpon traffic profile</p></li>
+<li><p><strong>interfaces</strong> (<em>Str</em>) – tagged interfaces</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.bridgeaddvoip">
+<span class="sig-name descname"><span class="pre">bridgeaddvoip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mxk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vlan</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.bridgeaddvoip" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Set VOIP bridge (bridge add 1-2-3-10/gpononu downlink-voince vlan 123 tagged rg-bridged sip)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+<li><p><strong>vlan</strong> (<em>Str</em>) – id of vlan for pppoe service</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.bridgedelete">
+<span class="sig-name descname"><span class="pre">bridgedelete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mxk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gemport</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interface</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.bridgedelete" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Delete bridge (bridge delete 1-2-3-234 eht1)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>gemport</strong> (<em>Str</em>) – id of bridge port</p></li>
+<li><p><strong>interfaces</strong> (<em>Str</em>) – tagged interfaces</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.cpeshow">
+<span class="sig-name descname"><span class="pre">cpeshow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.cpeshow" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Shows cpe interfaces configuration (cpe show 1/3/2)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.logout">
+<span class="sig-name descname"><span class="pre">logout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.logout" title="Permalink to this definition"></a></dt>
+<dd><p>Summary:
+Logout from mxk console</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.mgmtip">
+<span class="sig-name descname"><span class="pre">mgmtip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vlan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ipaddress</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.mgmtip" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Add MGMT IP Address (cpe rg wan modify 1/2/3 vlan 4 ip-addr 10.0.0.2 ip-com-profile MANAGEMENT)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+<li><p><strong>vlan</strong> (<em>Str</em>) – id of vlan for pppoe service</p></li>
+<li><p><strong>ipaddress</strong> (<em>Str</em>) – managment ip address</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.onuclear">
+<span class="sig-name descname"><span class="pre">onuclear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.onuclear" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Erease fsan data, but not configuration, use this to replace ONT (onu clear 3/2/8)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.onupower">
+<span class="sig-name descname"><span class="pre">onupower</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.onupower" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Show onu power (onu power show 1/2/3)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.onuset">
+<span class="sig-name descname"><span class="pre">onuset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fsan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.onuset" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Set ONT in logical port (onu set 2/3/9 vendorid vendorid ZNTS serno fsan 03A77FAC meprof zhone-2428)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+<li><p><strong>fsan</strong> (<em>Str</em>) – ont’s serial id</p></li>
+<li><p><strong>model</strong> (<em>Str</em>) – ont’s model</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.onusetforeing">
+<span class="sig-name descname"><span class="pre">onusetforeing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fsan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vendorid</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.onusetforeing" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Set ont in logical when ont is from a diferent vendor (onu set 2/3/9 vendorid vendorid DATACOM serno fsan 912F36B9 meprof dm980)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+<li><p><strong>fsan</strong> (<em>Str</em>) – ont’s serial id</p></li>
+<li><p><strong>model</strong> (<em>Str</em>) – ont’s model</p></li>
+<li><p><strong>vendorid</strong> (<em>Str</em>) – ont’s vendors setted in mxk</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.onushow">
+<span class="sig-name descname"><span class="pre">onushow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.onushow" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Show discovered ont and logicals ports avaibles, in a phisical port (onu show 2/1)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.onushowid">
+<span class="sig-name descname"><span class="pre">onushowid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.onushowid" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Show ont configurated in an especific logical port (onu show 2/1/5)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.onustatus">
+<span class="sig-name descname"><span class="pre">onustatus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.onustatus" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Return an specific onu status (onu status 1/2/3)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.pppoeconfig">
+<span class="sig-name descname"><span class="pre">pppoeconfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vlan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userpppoe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">passpppoe</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.pppoeconfig" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Add PPPoE WAN configuration (cpe rg wan modify 2/6/29 vlan 150 pppoe-usr-id testpppoe pppoe-password 1234567890)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+<li><p><strong>vlan</strong> (<em>Str</em>) – id of vlan for pppoe service</p></li>
+<li><p><strong>userpppoe</strong> (<em>Str</em>) – pppoe user</p></li>
+<li><p><strong>passpppoe</strong> (<em>Str</em>) – pppoe password</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.recoveront">
+<span class="sig-name descname"><span class="pre">recoveront</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.recoveront" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Reset ont and olt port optical communication (onu recover 3/2/1)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.sipnumber">
+<span class="sig-name descname"><span class="pre">sipnumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rxgain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">txgain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">voipprofile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.sipnumber" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Add SIP line number (cpe voip modify 1/1/64/1 rx-gain -7 tx-gain -2 dial-number 100001 username 100001 password 123abc voip-server-profile 1 display-name 100001 description 100001)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+<li><p><strong>pot</strong> (<em>Str</em>) – number of phisical sip interface</p></li>
+<li><p><strong>rxgain</strong> (<em>Str</em>) – rx gain</p></li>
+<li><p><strong>txgain</strong> (<em>Str</em>) – tx gain</p></li>
+<li><p><strong>number</strong> (<em>Str</em>) – sip line number</p></li>
+<li><p><strong>password</strong> (<em>Str</em>) – sip password</p></li>
+<li><p><strong>voipprofile</strong> (<em>Str</em>) – voip Profile</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.systemcommons">
+<span class="sig-name descname"><span class="pre">systemcommons</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sysprofile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.systemcommons" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Configure system commons profile, such as admin user and password(cpe system add 1/1/64 sys-common-profile Profile1)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+<li><p><strong>sysprofile</strong> (<em>Str</em>) – common settings profile</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.wansip">
+<span class="sig-name descname"><span class="pre">wansip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vlan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sipcommprofile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.wansip" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Add MGMT IP Address (cpe rg wan modify 1/2/3 vlan 4 ip-addr 10.0.0.2 ip-com-profile MANAGEMENT)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+<li><p><strong>vlan</strong> (<em>Str</em>) – id of vlan for pppoe service</p></li>
+<li><p><strong>ipaddress</strong> (<em>Str</em>) – managment ip address</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.wificonfig">
+<span class="sig-name descname"><span class="pre">wificonfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interface</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ssid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">passwifi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wlanprofile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.wificonfig" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Add WLAN interfaces configuration (cpe wlan add 1/2/3/1 admin-state up ssid Wifi-Zhone encrypt-key password123 Profile-WiFi Profile-WiFi)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mxkcommands.Commands.wlanshow">
+<span class="sig-name descname"><span class="pre">wlanshow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idonu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxkcommands.Commands.wlanshow" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Show data of WiFi Interfaces (cpe wlan show 3/2/2 showhidden)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slot</strong> (<em>Str</em>) – number of card in mxk chassis</p></li>
+<li><p><strong>port</strong> (<em>Str</em>) – number of port in slot</p></li>
+<li><p><strong>idonu</strong> (<em>Str</em>) – id of logical port</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Telnet string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<span class="target" id="module-mxktelnet"></span><section id="mxk-telnet-core-library">
+<h2>MXK Telnet Core Library<a class="headerlink" href="#mxk-telnet-core-library" title="Permalink to this headline"></a></h2>
+<p>Main core of pyzhone library
+This library send configuration to MXK Chassis for FTTx service
+It can be use to send personalized commads not listed in commands.py</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mxktelnet.MXKConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mxktelnet.</span></span><span class="sig-name descname"><span class="pre">MXKConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'admin'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">passw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'linktoweb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'192.168.0.41'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">23</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mxktelnet.MXKConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Main mxk configuration</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="mxktelnet.MXKConfig.sendcmdmxk">
+<span class="sig-name descname"><span class="pre">sendcmdmxk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwarg</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mxktelnet.MXKConfig.sendcmdmxk" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Summary:</dt><dd><p>Sends commands to mxk chassis</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line</strong> (<em>Str</em>) – string of commands to send to mxk chassis</p></li>
+<li><p><strong>**kwarg</strong> – keyword arguments to replace variables in the command string</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<span class="target" id="module-telnetclient"></span></section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to pyzhone’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Raul Andres Orlando.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+pyzhone package
+===============
+
+Submodules
+----------
+
+mxkcommands module
+--------------------------
+
+.. automodule:: mxkcommands
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+mxktelnet module
+------------------------
+
+.. automodule:: mxktelnet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+telnetclient module
+---------------------------
+
+.. automodule:: telnetclient
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pyzhone
+   :members:
+   :undoc-members:
+   :show-inheritance:
