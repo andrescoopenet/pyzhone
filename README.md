@@ -12,7 +12,7 @@ With this library you can send commands to DZN/Zhone Mxk series chassis.
 
 - ### mxktelnet.py
 You can use mxktelnet.py to send your own commands, using only strings or 
-sending the line whit the variable inside {} and passing the values as kwargs
+sending the line with the variable inside {} and passing the values as kwargs
 
 
 ```
